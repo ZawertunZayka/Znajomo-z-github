@@ -1,0 +1,48 @@
+Git to system kontroli wersji, który umożliwia śledzenie zmian w plikach i współpracę z innymi osobami nad projektem. Jest bardzo popularny wśród programistów, ponieważ pozwala na wygodne zarządzanie historią projektu, rozwiązywanie konfliktów oraz łatwe łączenie pracy różnych osób. Git jest systemem rozproszonym, co oznacza, że każdy użytkownik ma pełną kopię repozytorium na swoim komputerze, co daje dużą elastyczność.
+
+Podstawowe pojęcia i operacje w Gicie:
+
+Repozytorium (repo) – to miejsce, w którym przechowywane są wszystkie pliki projektu oraz historia zmian (commity). Może być lokalne na twoim komputerze lub zdalne (np. na GitHubie, GitLabie).
+
+Commit – zapis zmian w repozytorium. Każdy commit zawiera informacje o tym, co zostało zmienione w plikach, oraz metadane, takie jak autor, data, czy wiadomość opisująca zmiany.
+
+Branch (gałąź) – gałęzie pozwalają na równoległą pracę nad różnymi funkcjami projektu. Domyślnie istnieje gałąź o nazwie main (dawniej master), ale możesz tworzyć inne gałęzie, by np. pracować nad nową funkcjonalnością bez wpływu na główny kod.
+
+Merge – operacja łączenia dwóch gałęzi. Na przykład, jeśli pracujesz nad nową funkcją w oddzielnej gałęzi, po jej ukończeniu łączysz ją z główną gałęzią (main), aby wprowadzić zmiany do głównego kodu.
+
+Clone – kopiowanie zdalnego repozytorium na lokalny komputer.
+
+Pull – pobieranie najnowszych zmian z repozytorium zdalnego na lokalne. Używane, gdy chcesz zaktualizować swoje repozytorium lokalne o zmiany wprowadzone przez innych.
+
+Push – wysyłanie lokalnych zmian do zdalnego repozytorium.
+
+Pull Request (lub Merge Request w GitLabie) – prośba o połączenie zmian z jednej gałęzi z inną (zazwyczaj z gałęzi roboczej do gałęzi głównej). Jest to częsta metoda w pracy zespołowej, szczególnie w open-source, ponieważ umożliwia przegląd kodu przed połączeniem.
+
+Przykładowy workflow:
+
+Tworzenie repozytorium:
+
+git init
+
+
+Dodanie plików do repozytorium:
+
+git add <plik>
+
+
+Zatwierdzenie zmian (commit):
+
+git commit -m "Opis zmian"
+
+
+Wysłanie zmian na zdalne repozytorium:
+
+git push origin main
+
+
+Pobieranie zmian z repozytorium:
+
+git pull
+
+
+Git ma również bardziej zaawansowane funkcje, takie jak tagi, rebase, stashing (tymczasowe przechowywanie zmian) czy submoduły (repozytoria w repozytoriach). Jego główną zaletą jest wydajność, elastyczność oraz możliwość pracy w zespołach rozproszonych.
