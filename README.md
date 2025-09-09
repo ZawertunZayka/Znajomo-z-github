@@ -1,1 +1,1 @@
-# Znajomo-z-github
+# Znajomość-z-github
